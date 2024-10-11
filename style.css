@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* القاعدة العامة للجميع */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* جعل الحاوية متجاوبة */
+header {
+  background-color: dimgray;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10%;
+}
+
+/* الشعار */
+.logo {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em; /* تقليل الحجم قليلاً ليكون متجاوبًا */
+}
+
+/* الروابط */
+.navigation a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.navigation a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* أقسام الموقع */
+section {
+  padding: 100px 200px;
+}
+
+.QA {
+  background-color: #179912;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+.QA .card {
+  flex: 0 0 30%;
+  margin: 10px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: black;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(0, 253, 13);
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* الزر الرئيسي */
+.main_btn {
+  color: #fff;
+  background-color: #11ce31;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  transition: 0.7s ease;
+  margin: 10px;
+}
+
+.main_btn:hover {
+  background-color: #096d19;
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  color: rgb(120, 37, 197);
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3dce19;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.conten {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1d8136;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #f7f7f7;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.info h5 {
+  color: #ffffff;
+  font-size: 1.0em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact .info {
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: #000000;
+}
+
+.contact .info p {
+  font-size: 1.5em;
+}
+
+/* لتوسيط الزر في القسم الرئيسي */
+.main_btn1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer {
+  background-color: #033512;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: #1ed82e;
+}
+
+/* الوسائط للموبايل */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 5%;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .navigation a {
+    font-size: 0.9em;
+    padding-left: 15px;
+  }
+
+  section {
+    padding: 80px 10%;
+  }
+
+  .QA .card {
+    flex: 0 0 100%; /* جعل البطاقة تغطي كامل العرض في الشاشات الصغيرة */
+    margin: 10px 0;
+  }
+
+  .main h2 span {
+    font-size: 2em; /* تقليل الحجم قليلاً للشاشات الصغيرة */
+  }
+
+  .main h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* الوسائط للتابلت */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 12px 8%;
+  }
+
+  .navigation a {
+    font-size: 1em;
+    padding-left: 20px;
+  }
+
+  section {
+    padding: 90px 8%;
+  }
+
+  .QA .card {
+    flex: 0 0 45%; /* جعل البطاقة تغطي نصف العرض للتابلت */
+    margin: 10px;
+  }
+}
+
+/* الوسائط للأجهزة الكبيرة */
+@media screen and (min-width: 1025px) {
+  section {
+    padding: 100px 200px;
+  }
+
+  .QA .card {
+    flex: 0 0 30%; /* ثلاث بطاقات في الصف في الشاشات الكبيرة */
+  }
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%; /* تعديل حجم المسافات */
+}
+
+.main-content img {
+  width: 40%; /* حجم الصورة بالنسبة للشاشة */
+  border-radius: 10px; /* حواف دائرية للصورة */
+  margin-left: 20px; /* مسافة بين الصورة والنص */
+}
+
+.main-content div {
+  width: 55%; /* حجم النص بالنسبة للشاشة */
+  color: black;
+}
+
+.main-content h2 {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.main-content h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 20px;
+}

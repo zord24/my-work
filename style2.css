@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* القاعدة العامة للجميع */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* جعل الحاوية متجاوبة */
+header {
+  background-color: dimgray;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10%;
+}
+
+/* الشعار */
+.logo {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em; /* تقليل الحجم قليلاً ليكون متجاوبًا */
+}
+
+/* الروابط */
+.navigation a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.navigation a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* أقسام الموقع */
+section {
+  padding: 100px 200px;
+}
+
+
+/* الوسائط للموبايل */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 5%;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .navigation a {
+    font-size: 0.9em;
+    padding-left: 15px;
+  }
+
+  section {
+    padding: 80px 10%;
+  }
+
+  .QA .card {
+    flex: 0 0 100%; /* جعل البطاقة تغطي كامل العرض في الشاشات الصغيرة */
+    margin: 10px 0;
+  }
+
+  .main h2 span {
+    font-size: 2em; /* تقليل الحجم قليلاً للشاشات الصغيرة */
+  }
+
+  .main h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* الوسائط للتابلت */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 12px 8%;
+  }
+
+  .navigation a {
+    font-size: 1em;
+    padding-left: 20px;
+  }
+
+  section {
+    padding: 90px 8%;
+  }
+
+  .QA .card {
+    flex: 0 0 45%; /* جعل البطاقة تغطي نصف العرض للتابلت */
+    margin: 10px;
+  }
+}
+
+/* الوسائط للأجهزة الكبيرة */
+@media screen and (min-width: 1025px) {
+  section {
+    padding: 100px 200px;
+  }
+
+  .QA .card {
+    flex: 0 0 30%; /* ثلاث بطاقات في الصف في الشاشات الكبيرة */
+  }
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%; /* تعديل حجم المسافات */
+}
+
+.main-content img {
+  width: 40%; /* حجم الصورة بالنسبة للشاشة */
+  border-radius: 10px; /* حواف دائرية للصورة */
+  margin-left: 20px; /* مسافة بين الصورة والنص */
+}
+
+.main-content div {
+  width: 55%; /* حجم النص بالنسبة للشاشة */
+  color: black;
+}
